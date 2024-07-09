@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PlantS</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/LOGO.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <div class="container-fluid nav-bar bg-transparent">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+                <a href="property-list.html" class="navbar-brand d-flex align-items-center text-center">
+                    <div class="icon p-2 me-2">
+                        <img class="img-fluid" src="img/LOGO.png" alt="Icon" style="width: 30px; height: 30px;">
+                    </div>
+                    <h1 class="m-0 text-primary">PlantS</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tanaman</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="property-list.html" class="dropdown-item">Tanaman Hias</a>
+                                <a href="property-type.html" class="dropdown-item">Jenis Tanaman</a>
+                                <a href="property-agent.html" class="dropdown-item">Karyawan Terbaik</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="testimonial.html" class="dropdown-item">Ulasan</a>
+                                <a href="404.html" class="dropdown-item">Informasi Toko</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="https://wa.me/qr/KQJONANIYXVLL1" class="btn btn-primary px-3 d-none d-lg-flex">Pesan Sekarang</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Header Start -->
+        <div class="container-fluid header bg-white p-0">
+            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+                <div class="col-md-6 p-5 mt-lg-5">
+                    <h1 class="display-5 animated fadeIn mb-4">Menjual<span class="text-primary">Tanaman Hias</span>Untuk Dekorasi Rumah</h1>
+                    <p class="animated fadeIn mb-4 pb-2">Tumbuhan hias adalah tanaman yang ditanam dan dipelihara terutama untuk keindahan visual. Mereka digunakan untuk mempercantik ruangan, taman, atau lingkungan sekitar, serta memberikan suasana yang lebih segar dan alami.</p>
+                    <a href="property-list.html" class="btn btn-primary py-3 px-5 me-3 animated fadeIn">Mulai</a>
+                </div>
+                <div class="col-md-6 animated fadeIn">
+                    <div class="owl-carousel header-carousel">
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/Tumbuhan1.jpg" alt="https://www.brilio.net/wow/7-tanaman-hias-daun-merambat-cantik-dan-mudah-ditanam-210222g.html">
+                        </div>
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/Tumbuhan2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!-- Search Start -->
+        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-md-10">
+                        <div class="row g-2">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control border-0 py-3" placeholder="Pilih Jenis Tanaman">
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select border-0 py-3">
+                                    <option selected> Tanaman Kaktus</option>
+                                    <option value="1">Tanaman Hias Air</option>
+                                    <option value="2">Tanaman Hias Air</option>
+                                    <option value="3">Tanaman Hias Gantung</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select border-0 py-3">
+                                    <option selected>Bandung</option>
+                                    <option value="1">Jakarta</option>
+                                    <option value="2">Banten</option>
+                                    <option value="3">Tanggerang</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-dark border-0 w-100 py-3">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search End -->
+
+
+        <!-- Category Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Macam-macam Tanaman Hias</h1>
+                    <p>Tanaman hias tidak hanya memperindah lingkungan tetapi juga memberikan berbagai manfaat lain yang signifikan,seperti menambah keindahan visual pada rumah, kantor, dan ruang publik, meningkatkan kualitas udara dan kesehatan penghuni,Kehadiran tanaman hias memiliki efek positif pada kesejahteraan psikologis dan emosional</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/Logo Tanaman hias daun.png" alt="Icon">
+                                </div>
+                                <h6>Tanaman Hias Daun</h6>
+                                <span>638 Terjual</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/Tanaman hias bunga.png" alt="Icon">
+                                </div>
+                                <h6>Tanaman Hias Bunga</h6>
+                                <span>987 Terjual</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/Tanaman Succulent.png" alt="Icon">
+                                </div>
+                                <h6>Tanaman Succulent</h6>
+                                <span>435 Terjual</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/Tanaman Kaktus.png" alt="Icon">
+                                </div>
+                                <h6>Tanaman Kaktus</h6>
+                                <span>543 Terjual</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/Tanaman Air.png" alt="Icon">
+                                </div>
+                                <h6>Tanaman Air</h6>
+                                <span>345 Terjual</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/Tanaman Hias Aromatik.png" alt="Icon">
+                                </div>
+                                <h6>Tanaman Hias Aromatik</h6>
+                                <span>165 Terjual</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/Tanaman Hias Gantung.png" alt="Icon">
+                                </div>
+                                <h6>Tanaman Hias Gantung</h6>
+                                <span>500 Terjual</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/Tanaman Hias Buah.png" alt="Icon">
+                                </div>
+                                <h6>Tanaman Hias Buah</h6>
+                                <span>221 Terjual</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Category End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                            <img class="img-fluid w-100" src="img/About1.jpg">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="mb-4">#Tanaman Paling Populer</h1>
+                        <p class="mb-4">Monstera adansonii, yang dikenal secara populer sebagai Janda Bolong, adalah tanaman hias tropis yang menarik perhatian karena bentuk daunnya yang unik.Tanaman ini berasal dari hutan hujan tropis di Amerika Tengah dan Selatan.</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Daun: Berbentuk oval dengan lubang-lubang alami</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Warna: Daun berwarna hijau tua yang mencolok</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Batang: Tumbuh merambat dan menjalar</p>
+                        <a class="btn btn-primary py-3 px-5 mt-3" href="https://id.theasianparent.com/tanaman-monstera">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Property List Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-0 gx-5 align-items-end">
+                    <div class="col-lg-6">
+                        <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
+                            <h1 class="mb-3">Diskon sampai 90% dibulan ini </h1>
+                            <p>Tanaman hias tidak hanya memperindah lingkungan tetapi juga memberikan berbagai manfaat lain yang signifikan. Ayo pilih tanaman hias kesukaanmu...</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-start text-lg-end wow slideInRight" data-wow-delay="0.1s">
+                        <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
+                            <li class="nav-item me-2">
+                                <a class="btn btn-outline-primary active" data-bs-toggle="pill" href="#tab-1">Populer</a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-2">Diskon</a>
+                            </li>
+                            <li class="nav-item me-0">
+                                <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-3">Termurah</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/Kaktus Shop.png" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Diskon 20%</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Kaktus</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">Rp<s>35.000</s>    Rp 20.000.</h5>
+                                        <a class="d-block h5 mb-2" href="">Echinocactus grusonii</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Jakarta barat</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"></i>Buble wrap</small>
+                                        <small class="flex-fill text-center border-end py-2"></i>Packing Kayu</small>
+                                        <small class="flex-fill text-center py-2"></i>Reguler</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/tanaman air shop.png" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Limited Edition</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Tanaman Air</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">Rp 45.000</h5>
+                                        <a class="d-block h5 mb-2" href="">Eichhornia crassipes</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>medan</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"></i>Buble warp</small>
+                                        <small class="flex-fill text-center border-end py-2"></i>Packing Kayu</small>
+                                        <small class="flex-fill text-center py-2"></i>Reguler</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/anggrek shop.png" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Terlaris #1</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Tanaman Bunga</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">Rp 50.000</h5>
+                                        <a class="d-block h5 mb-2" href="">Orchidaceae</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Bandung</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"></i>Buble wrap</small>
+                                        <small class="flex-fill text-center border-end py-2"></i>Packing Kayu</small>
+                                        <small class="flex-fill text-center py-2">Reguler</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/tumbuhan Janda.png" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Terlaris #2</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Tanaman Daun</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">Rp 30.000</h5>
+                                        <a class="d-block h5 mb-2" href=""> Monstera adansonii</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Serang Banten</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"></i>Buble wrap</small>
+                                        <small class="flex-fill text-center border-end py-2"></i>Packing Kayu</small>
+                                        <small class="flex-fill text-center py-2"></i>Reguler</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/Bulat.png" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Terlaris #4</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Tanaman Hias Daun</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">Rp 50.000</h5>
+                                        <a class="d-block h5 mb-2" href="">Pilea Peperomioides</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Kalimantan Barat</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"></i>Buble wrap</small>
+                                        <small class="flex-fill text-center border-end py-2"></i>Packing Kayu</small>
+                                        <small class="flex-fill text-center py-2"></i>Reguler</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/lember.png" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Terlaris #5</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Tanaman Daun Besar</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">Rp 100.000</h5>
+                                        <a class="d-block h5 mb-2" href="">Philodendron Selloum</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Denpasar</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"></i>Buble wrap</small>
+                                        <small class="flex-fill text-center border-end py-2"></i>Packing Kayu</small>
+                                        <small class="flex-fill text-center py-2"></i>Reguler</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                                <a class="btn btn-primary py-3 px-5" href="https://www.tokopedia.com/blog/tanaman-hias-daun-populer-hlv/">Browse More Plant</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/anggrek shop.png" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Diskon 30%</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Tanaman Bunga</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">Rp<s>60.000</s> Rp 30.000</h5>
+                                        <a class="d-block h5 mb-2" href="">Orchidaceae/Anggrek</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Medan</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"></i>Buble wrap</small>
+                                        <small class="flex-fill text-center border-end py-2">Packing Kayu</small>
+                                        <small class="flex-fill text-center py-2"></i>Reguler</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/Bulat.png" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Diskon 45%</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Tanaman Daun</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">Rp<s>120.000</s> Rp 60.000</h5>
+                                        <a class="d-block h5 mb-2" href="">Pilea Peperomioides</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Jakarta Timur</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"></i>Buble wrap</small>
+                                        <small class="flex-fill text-center border-end py-2"></i>Packing Kayu</small>
+                                        <small class="flex-fill text-center py-2"></i>Reguler</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/Kaktus Shop.png" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Diskon 50%</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Kaktus</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">Rp<s>100.000</s> Rp 50.000</h5>
+                                        <a class="d-block h5 mb-2" href="">Echinocactus grusonii</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Jambi</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"></i>Buble wrap</small>
+                                        <small class="flex-fill text-center border-end py-2"></i>Packing Kayu</small>
+                                        <small class="flex-fill text-center py-2"></i>Reguler</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/Diskon1.png" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Diskon 10%</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Kaktus</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">Rp<s>50.000</s> Rp 40.000</h5>
+                                        <a class="d-block h5 mb-2" href="">Carnegiea gigantea</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Mesir</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"></i>Buble wrap</small>
+                                        <small class="flex-fill text-center border-end py-2"></i>Packing Kayu</small>
+                                        <small class="flex-fill text-center py-2"></i>Reguler</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/Diskon2.png" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Diskon 70%</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Tanaman Daun</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">Rp<s>200.000</s> Rp 80.000</h5>
+                                        <a class="d-block h5 mb-2" href="">Raindrop Peperomia</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Jawa Barat</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"></i>Buble wrap</small>
+                                        <small class="flex-fill text-center border-end py-2"></i>Packing Kayu</small>
+                                        <small class="flex-fill text-center py-2"></i>Reguler</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/Diskon3.png" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">Diskon 80%</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Shop</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">Rp<s>200.000</s> Rp 40.000</h5>
+                                        <a class="d-block h5 mb-2" href="">Lemna minor</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Tanggerang</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"></i>Buble wrap</small>
+                                        <small class="flex-fill text-center border-end py-2"></i>Packing Kayu</small>
+                                        <small class="flex-fill text-center py-2"></i>Reguler</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <a class="btn btn-primary py-3 px-5" href="https://rimbakita.com/tanaman-hias/">Browse More PlantS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/murah1.png" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"></div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Tanaman Hias Gantung</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">Rp 12.000</h5>
+                                        <a class="d-block h5 mb-2" href="">Ivy </a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Aceh Timur</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"></i>Buble wrap</small>
+                                        <small class="flex-fill text-center border-end py-2"></i>Packing Kayu</small>
+                                        <small class="flex-fill text-center py-2"></i>Reguler</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/murah2.png" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"></div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Tanaman Hias Daun</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">Rp 15.000</h5>
+                                        <a class="d-block h5 mb-2" href="">Philodendron</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Bali</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"></i>Buble wrap</small>
+                                        <small class="flex-fill text-center border-end py-2"></i>Packing Kayu</small>
+                                        <small class="flex-fill text-center py-2"></i>Reguler</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/murah3.png" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"></div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Tanaman Hias Daun</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">Rp 20.000</h5>
+                                        <a class="d-block h5 mb-2" href="">Alocasia</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Yogyakarta</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"></i>Buble wrap</small>
+                                        <small class="flex-fill text-center border-end py-2"></i>Packing kayu</small>
+                                        <small class="flex-fill text-center py-2"></i>Reguler</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/murah4.png" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"></div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Tanaman Hias Dinding</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">Rp 10.000</h5>
+                                        <a class="d-block h5 mb-2" href="">Lobelia</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Bengkulu</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"></i>Buble wrap</small>
+                                        <small class="flex-fill text-center border-end py-2"></i>Packing kayu</small>
+                                        <small class="flex-fill text-center py-2"></i>Reguler</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/murah5.png" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"></div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Tanaman Hias Dinding</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">Rp 25.000</h5>
+                                        <a class="d-block h5 mb-2" href="">Sirih Gading</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Jayapura</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"></i>Buble wrap</small>
+                                        <small class="flex-fill text-center border-end py-2"></i>Packing kayu</small>
+                                        <small class="flex-fill text-center py-2"></i>Reguler</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/murah6.png" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"></div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Kaktus kecil</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">Rp 20.000</h5>
+                                        <a class="d-block h5 mb-2" href="">Echeveria</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Bekasi</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"></i>Buble wrap</small>
+                                        <small class="flex-fill text-center border-end py-2"></i>Packing kayu</small>
+                                        <small class="flex-fill text-center py-2"></i>Reguler</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <a class="btn btn-primary py-3 px-5" href="https://www.haibunda.com/moms-life/20200803172613-76-155016/5-tanaman-hias-murah-meriah-tidak-menguras-kantong#:~:text=5%20Tanaman%20Hias%20Murah%20Meriah%2C%20Tidak%20Menguras%20Kantong,berkumpul%2C%20seperti%20brokoli.%20...%205%205.%20Bougenville%20">Browse More PlantS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Property List End -->
+
+
+        <!-- Call to Action Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="bg-light rounded p-3">
+                    <div class="bg-white rounded p-4" style="border: 1px dashed rgba(0, 185, 142, .3)">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                                <img class="img-fluid rounded w-100" src="img/Owner1.png" alt="">
+                            </div>
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="mb-4">
+                                    <h1 class="mb-3">Konsultasi Bersama Plant parent</h1>
+                                    <p>Untuk konsutasi lebih lanjut bisa hubungi kami melalui kontak di bawah ini atau datang langsung ketoko kami, anda bisa melihat dan memilih tanaman secara langsung, serta mendapatkan saran langsung dari penjual tentang perawatan tanaman.</p>
+                                </div>
+                                <a href="https://wa.me/qr/KQJONANIYXVLL1" class="btn btn-primary py-3 px-4 me-2"><i class="fa fa-phone-alt me-2"></i>Contact</a>
+                                <a href="https://calendar.google.com/calendar/u/0/r?pli=1" class="btn btn-dark py-3 px-4"><i class="fa fa-calendar-alt me-2"></i>Jadwalkan Konsul</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Call to Action End -->
+
+
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Karyawan</h1>
+                    <p>Karyawan toko tanaman hias memainkan peran penting dalam memastikan pelanggan mendapatkan pengalaman terbaik, mulai dari pemilihan tanaman yang tepat hingga tips perawatan.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/tim.1.png" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Aisyah</h5>
+                                <small>Kasir</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/tim.2.png" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Adrian Dwi</h5>
+                                <small>Manager</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/tim.3.png" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Ramadhan</h5>
+                                <small>Asisten Manager</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/tim.4.png" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Roseta</h5>
+                                <small>Staf</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Ulasan Pembeli</h1>
+                    <p>Berikut merupakan ulasan para pembeli yang sudah membeli produk tanaman hias kami dan datang langsung ke toko kami, untuk berkonsultasi langsung.</p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>Produknya bagus bagus untuk dekorasi rumah saya</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/testi1.png" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Rici</h6>
+                                    <small>Pedagang</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>Saya suka banget tanaman janda bolong rumah saya jadi keliatan hidup</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/testi2.png" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Yuyu</h6>
+                                    <small>Ibu rumah tangga</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>Istri saya suka banget kalo saya bawa tanaman hias langganan saya, saya jadi sering pulang ke rumah</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/testi3.png" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Helmi</h6>
+                                    <small>pengusaha</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Kontak Kami</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Kota Serang, Banten</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+62 838-7901-6780</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>PlantS@gmail.id.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/share/1b9Gifw3inkixBm9/?mibextid=LQQJ4d "><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://youtube.com/@priaabdullah9146?si=CBov0k36YLEJVc01 "><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/pria-abdullah?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app "><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Quick Links</h5>
+                        <a class="btn btn-link text-white-50" href="">About Us</a>
+                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="">Our Services</a>
+                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Photo Gallery</h5>
+                        <div class="row g-2 pt-2">
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/anggrek shop.png" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/Diskon1.png" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/Diskon2.png" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/Diskon3.png" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/murah1.png" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/murah2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Hubungi kami</h5>
+                        <p>Masukan email anda untuk konsultasi.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Pria abdullah</a>,UI&UX Designer. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							<a class="border-bottom" href="https://htmlcodex.com"></a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
